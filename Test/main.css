@@ -1,0 +1,205 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: black;
+    transition: all 2s ease-in-out; 
+}
+
+h1{
+    font-family: 'klavika-light';
+    font-size: 40px;
+    font-weight: 200;
+    text-decoration-line: underline;
+}
+
+.container{
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.bg2{
+    background: url('../assets/images/background.jpg') left center;
+    background-size: auto 100%;
+    transition: all .8s ease-in-out;
+}
+
+#glow{
+    position: absolute;
+    top: calc(50% - 5%);
+    left: calc(50% - 5%);
+    height: 10%;
+    animation: glow 5s ease-in-out;
+}
+
+@keyframes glow {
+    0% { transform: rotate(180deg) }
+    100% { transform: scale(3) translateX(-5%) translateY(-5%) }
+}
+
+#monk-img{
+    position: absolute;
+    top: calc(50% - 10%);
+    left: calc(50% - 6%);
+    height: 20%;
+    transition: .8s;
+    animation: levitate 1.2s infinite ease;
+}
+
+@keyframes levitate {
+    0%, 100% {
+      top: calc(50% - 106px);
+    }
+    50% {
+      top: calc(50% - 96px);
+    }
+  }
+
+.hide{
+    display: none;
+}
+
+#patience, #patience2{
+    position: absolute;
+    color: white;
+    top: 58%;
+    left: 40%;
+}
+
+.slide1{
+    margin: 0;
+    padding: 20;
+    color: white;
+}
+
+/* ARROWS */
+
+#right-arrow{
+    position: absolute;
+    font-size: 4vw;
+    top: 45%;
+    left: calc(100% - 60px);
+    color: rgba(255, 255 ,255, 0.6);
+}
+
+#right-arrow:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#left-arrow{
+    position: absolute;
+    font-size: 4vw;
+    top: 45%;
+    left: calc(0% + 15px);
+    color: rgba(255, 255 ,255, 0.6);
+}
+
+#left-arrow:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/* PAGINATION */
+
+#pagination {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.6);
+    top: 90%;
+    left: 7%;
+}
+
+#pagination i{
+    cursor: pointer;
+}
+
+/* TEXT */
+
+#text{
+    position: absolute;
+    top: calc(80%);
+    font-size: 12px;
+    max-width: calc(28%);
+    font-family: 'klavika-light';
+}
+
+.p-text{
+    font-family: 'klavika-light';
+    font-style: italic;
+}
+
+#text-1{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    height: 20%;
+}
+
+#text-2{
+    position: absolute;
+    top: 38%;
+    left: 5%;
+    height: 20%;
+}
+
+#text-3{
+    position: absolute;
+    top: 38%;
+    left: 65%;
+    height: 20%;
+}
+
+#text-4{
+    position: absolute;
+    top: 38%;
+    left: 70%;
+    height: 20%;
+}
+
+#text-5{
+    position: absolute;
+    top: 38%;
+    left: 70%;
+    height: 20%;
+}
+
+#text-6{
+    position: absolute;
+    top: 38%;
+    left: 5%;
+    height: 20%;
+}
+
+#text-7{
+    position: absolute;
+    top: 38%;
+    left: 5%;
+    height: 20%;
+}
+
+/* FONTS */
+
+@font-face{
+    font-family: 'klavika-bold';
+    src: url('../assets/font/klavika-bold-webfont.woff')
+}
+@font-face{
+    font-family: 'klavika-light';
+    src: url('../assets/font/klavika-light-webfont.woff')
+}
+@font-face{
+    font-family: 'klavika-medium';
+    src: url('../assets/font/klavika-medium-webfont.woff')
+}
+@font-face{
+    font-family: 'klavika-regular';
+    src: url('../assets/font/klavika-regular-webfont.woff')
+}
+
+#logo{
+    position: absolute;
+    top: 90%;
+    left: 94%;
+    color: white;
+    fill: white;
+}
